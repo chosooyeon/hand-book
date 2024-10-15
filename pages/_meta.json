@@ -1,0 +1,21 @@
+{
+  "index": {
+    "type": "page",
+    "title": "vue2 -> vue3 마이그레이션",
+    "display": "hidden",
+    "theme": {
+      "layout": "article"
+    }
+  },
+  "docs": {
+    "type": "page",
+    "title": "Docs"
+  },
+  "contribution": {
+    "type": "page",
+    "title": "Contribution",
+    "theme": {
+      "typesetting": "article"
+    }
+  }
+}
