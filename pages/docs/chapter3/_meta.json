@@ -1,0 +1,9 @@
+{
+    "component": {
+        "title": "component 분리작업"
+    },
+    "jenkins": {
+        "title": "jenkins ci 세팅작업"
+    }
+}
+  

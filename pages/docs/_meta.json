@@ -1,5 +1,14 @@
 {
-  "community-resources": {
-    "title": "COMMUNITY RESOURCES"
+  "chapter0": {
+    "title": "시작하기"
+  },
+  "chapter1": {
+    "title": "vue3의 특징"
+  },
+  "chapter2": {
+    "title": "vue3 사용하기"
+  },
+  "chapter3": {
+    "title": "기타작업"
   }
 }
