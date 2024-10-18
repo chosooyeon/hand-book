@@ -1,0 +1,36 @@
+## 기본개념
+
+SFC(Single-File Components) 내에서 Composition API를 사용하기 위한 컴파일 타임 구문
+
+- 더 적은 상용구로 더 간결한 코드
+- 순수 TypeScript를 사용하여 소품 및 방출된 이벤트를 선언하는 기능
+- 런타임 성능 향상(템플릿이 중간 프록시 없이 동일한 범위의 렌더링 함수로 컴파일됨)
+- 더 나은 IDE 유형 추론 성능(언어 서버가 코드에서 유형을 추출하는 작업 감소)
+
+공식 문서에서 composition api를 사용하기를 권장
+
+## 기본구조
+
+```ts
+<script setup>
+import { ref, onMounted } from 'vue'
+
+// reactive state
+const count = ref(0)
+
+// functions that mutate state and trigger updates
+function increment() {
+  count.value++
+}
+
+// lifecycle hooks
+onMounted(() => {
+  console.log(`The initial count is ${count.value}.`)
+})
+</script>
+
+<template>
+  <button @click="increment">Count is: {{ count }}</button>
+</template>
+```
+

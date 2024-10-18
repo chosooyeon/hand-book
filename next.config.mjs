@@ -11,9 +11,9 @@ const withNextra = nextra({
     return [
       {
         source: "/docs",
-        destination: "/docs/getting-started",
+        destination: "/docs",
         permanent: true,
-      },
+      }
     ];
   },
   images: {
