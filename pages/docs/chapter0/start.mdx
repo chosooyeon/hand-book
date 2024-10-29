@@ -1,3 +1,13 @@
-## 테스트입니다
+## 연동방법
 
-테스트내용
+```java
+//spring mpa에 vue3 spa 페이지 추가
+@Override
+protected void addViewControllers(ViewControllerRegistry registry) {
+    registry.addViewController("/").setViewName("view/vue3/index");
+    registry.addViewController("/**/{spring:\\w+}").setViewName("forward:/");
+    super.addViewControllers(registry);
+}
+```
+
+페이지를 추가 한 다음 기존처럼 spring 배포 jar파일을 배포하면 된다
